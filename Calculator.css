@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: 'Roboto', sans-serif; 
+    outline: none;
+    font-weight: bold;
+}
+
+.header{
+    display: grid;
+    justify-content: center;
+   padding-top: 50px;
+   color: #3498db;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.calculator {
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 12px #ffffff, 
+                5px 5px 12px rgba(0, 0, 0, 0.1); 
+    display: grid;
+    grid-template-columns: repeat(4, 68px);    
+    transition: all 0.3s ease; 
+}
+.calculator:hover {
+    box-shadow: inset 5px 5px 12px #ffffff, 
+                5px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+input {
+    grid-column: span 4;   
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 12px #ffffff,  
+                5px 5px 12px rgba(0, 0, 0, 0.1);  
+    border: none;
+    border-radius: 25px;
+    color: #333; 
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button {
+    height: 48px;
+    width: 48px;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 12px #ffffff,  
+                5px 5px 12px rgba(0, 0, 0, 0.1);  
+    border: none;
+    border-radius: 25px;
+    margin: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: #d1d9e6; 
+    box-shadow: inset 5px 5px 12px #ffffff,  
+                5px 5px 12px rgba(0, 0, 0, 0.2);  
+}
+
+.equal {
+    width: 115px;
+    background-color: #ff7043; 
+    color: white;
+    box-shadow: none;
+    transition: all 0.3s ease; 
+}
+
+.equal:hover {
+    background-color: #e64a19; 
+}
+
+.sym {
+    background-color: #ff7043; 
+    box-shadow: none;
+    font-size: 20px;
+}
+
+.sym:hover {
+    background-color: #e64a19; 
+}
+
+.del{
+
+    box-shadow: none; 
+}
+
+.del:hover{
+    background-color: #d32f2f;
+    box-shadow: none;
+}
